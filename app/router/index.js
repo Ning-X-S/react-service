@@ -1,7 +1,6 @@
 const router = require('koa-router')()
-// const reptileController = require('./controller/reptile-controller')
+const contentController = require('../controller/content-controller')
 
-// router.get('/reptile', reptileController.reptile)
 router.get('/test', (ctx) => {
   ctx.body = {
     error_code: 0,
@@ -12,6 +11,9 @@ router.get('/test', (ctx) => {
     }
   }
 })
+
+// 获取内容列表
+router.get('/content/list', contentController.list)
 
 
 module.exports = router

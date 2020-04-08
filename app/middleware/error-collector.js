@@ -9,10 +9,10 @@ module.exports = function () {
       // Raven.captureException(err, {
       //   level: env === 'development' ? 'warning' : 'error'
       // })
-      let { message } = err
-      ctx.status = 400
+      let { message, code, status } = err
+      ctx.status = status || 400
       ctx.body = {
-        'error_code': 400004,
+        'error_code': code || 4000004,
         'message': message || '请求出错',
         'data': {}
       }
