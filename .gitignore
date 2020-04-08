@@ -1,0 +1,6 @@
+/node_modules
+/logs
+/run
+/apidoc
+package-lock.json
+/app/config/sql.json

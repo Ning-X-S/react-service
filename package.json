@@ -1,0 +1,30 @@
+{
+  "name": "react-service",
+  "version": "1.0.0",
+  "description": "react-cli-app前端项目的服务",
+  "main": "serve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node ./server.js"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "mysql2": "^2.0.1",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ning-X-S/react-service.git"
+  },
+  "author": "qiuwen ju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ning-X-S/react-service/issues"
+  },
+  "homepage": "https://github.com/Ning-X-S/react-service#readme"
+}
