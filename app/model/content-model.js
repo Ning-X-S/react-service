@@ -2,6 +2,7 @@ module.exports = (sequelize, dataTypes) => {
   let Content = sequelize.define('Content', {
     id: {
       primaryKey: true,
+      autoIncrement: true,
       type: dataTypes.INTEGER
     },
     title: {
