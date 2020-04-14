@@ -20,12 +20,11 @@ async function onlineServer (ctx, next) {
     throw new ServiceError({ message: '任务查询失败', code: 4000503 })
   }
   if (config.online[name].password !== password) {
-    console.log(process.env.NODE_ENV)
-    throw new ServiceError({ message: '密码错误', code: 4000502 })
+    throw new ServiceError({ message: '密码错误' + config.online[name].password, code: 4000502 })
   }
   isPacking = true
   try {
-    process.chdir(config.pwd)
+    process.chdir(config.online[name].pwd)
   } catch (err) {
     isPacking = false
     throw new ServiceError({ message: JSON.stringify(err), code: 400765 })
