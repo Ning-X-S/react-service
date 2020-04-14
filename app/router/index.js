@@ -1,5 +1,6 @@
 const router = require('koa-router')()
 const contentController = require('../controller/content-controller')
+const onlineController = require('../controller/online-controller')
 
 router.get('/api/test', (ctx) => {
   ctx.body = {
@@ -39,6 +40,10 @@ router.get('/api/content/delete', (ctx) => {
     data: {}
   }
 })
+
+
+// 上线相关
+router.get('/api/online', onlineController.onlineServer)
 
 
 module.exports = router

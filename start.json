@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "name": "react-service",
+    "script": "./server.js",
+    "instances": 2,
+    "watch": false,
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
