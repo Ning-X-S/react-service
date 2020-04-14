@@ -21,7 +21,7 @@ async function onlineServer (ctx, next) {
   }
   if (config.online[name].password !== password) {
     console.log(process.env.NODE_ENV)
-    throw new ServiceError({ message: '密码错误' + config.online[name].password, code: 4000502 })
+    throw new ServiceError({ message: '密码错误', code: 4000502 })
   }
   isPacking = true
   try {
