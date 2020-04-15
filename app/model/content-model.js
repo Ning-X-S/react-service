@@ -6,13 +6,13 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.INTEGER
     },
     title: {
-      type: dataTypes.STRING
+      type: dataTypes.TEXT
     },
     desc: {
-      type: dataTypes.STRING
+      type: dataTypes.TEXT
     }
   }, {
-    tableName: 'first_test',
+    tableName: 'content_table',
     timestamps: false // 必须加上，不然会多查询 createdAt 和 updatedAt 列
   })
   return Content
