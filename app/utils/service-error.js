@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 
 class ServiceError extends Error {
   constructor(options = {}) {

@@ -9,6 +9,7 @@ module.exports = {
   deleteContent
 }
 
+// eslint-disable-next-line no-unused-vars
 async function getList (ctx, next) {
   try {
     const { page = 1, size: limit = 10, id = null } = ctx.query;
@@ -41,7 +42,7 @@ async function getList (ctx, next) {
     } else {
       return {
         error_code: 0,
-        message: '请求成功',
+        message: '请求失败',
         data: {
           list: [],
           total: 0,
@@ -56,6 +57,7 @@ async function getList (ctx, next) {
 }
 
 
+// eslint-disable-next-line no-unused-vars
 async function getDetail(ctx, next) {
   try {
     const { id = '' } = ctx.params    
@@ -90,6 +92,7 @@ async function getDetail(ctx, next) {
 }
 
 
+// eslint-disable-next-line no-unused-vars
 async function createContent(ctx, next) {
   try {
     const { title = "", desc = ""  } = ctx.params
@@ -121,6 +124,7 @@ async function createContent(ctx, next) {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 async function updateContent(ctx, next) {
   try {
     const { id = "", title = "", desc = ""  } = ctx.params
@@ -163,6 +167,7 @@ async function updateContent(ctx, next) {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 async function deleteContent(ctx, next) {
   try {
     const { id = "" } = ctx.params
