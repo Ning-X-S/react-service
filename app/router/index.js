@@ -48,7 +48,7 @@ router.get('/api/online', onlineController.onlineServer)
 
 
 // thoughtworks相关
-router.get('/api/agents/list', thoughtworksController.list)
+router.get('/api/agents', thoughtworksController.list)
 router.post('/api/agents/update', thoughtworksController.update)
 router.get('/api/agents/update', (ctx) => {
   ctx.body = {
