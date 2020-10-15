@@ -20,3 +20,18 @@
 //   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
 //   PRIMARY KEY (`id`)
 // ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='评论表';
+
+// thoughtworks表
+// create table `thoughtworks`(
+//   `id` bigint(20) unsigned not null AUTO_INCREMENT comment 'id',
+//   `ip` varchar(15) not null comment 'ip',
+//   `location` varchar(30) not null comment 'location',
+//   `name` varchar(50) not null comment 'location',
+//   `os` varchar(10) not null comment 'os',
+//   `status` varchar(10) not null comment 'status',
+//   `type` varchar(10) not null comment 'type',
+//   `resources` varchar(500) not null comment 'resources',
+//   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+//   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+//   PRIMARY KEY (`id`)
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='thoughtworks表';
